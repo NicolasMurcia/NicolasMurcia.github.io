@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=description content="Geme">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<title>Game - Introdução</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+</head>
+<body>
+	<main class="intro">		
+		<div class="box-btn pull-left" >Estruturas</div>
+		<img src="assets/images/title-dois.png" class="title-dois pull-left" alt="Sistema Digestorio">	
+		<div class="box-btn pull-left box-btn-2">Pontuação = <span id="point"> 0 </span></div>
+		<div class="content licao">
+			<div id="box-success">
+				<div class='content'>
+					<span class="close" data-step="1">X</span>
+					<h4 id="successTitle" class="text-center">Bom trabalho!</h4>
+					<h4 id="successText" class=text-center"">
+						Você montou seu torso com êxito. Clique no X para iniciar as tarefas.
+					</h4>
+				</div>
+			</div>
+			<div class="col-um">
+				<div class="box-licao" style="height: 75px;">
+					<h3>
+						<small>LIÇÃO 1</small>
+						VISÃO GERAL  
+					</h3>
+				</div>
+				<div class="box-licao">
+					<h4>Instruções</h4>
+					<p>
+						Antes de iniciar as <strong>tarefas da </strong>Lição 1</strong>, 
+						você deverá <strong>clicar </strong> no <strong>órgão isolado</strong> do Sistema Digestório e <strong>arrastá-lo</strong> adequadamente para o torso! 
+					</p>
+				</div>
+				<div class="box-licao">
+					<h4 class="purple">TAREFAS</h4>
+					<ul>
+					    <li>
+					    	<span class="pink">1)</span> identifique os <span class="pink">órgãos constituintes</span> do TGI. 
+					    </li>
+					    <li>
+					    	<span class="blue">2)</span>
+					    	 identifique os <span class="blue">Órgãos Acessórios</span> ao TGI.
+					    </li>
+					    <li>
+					    	<span class="orange">3)</span>
+					    	 identifique os <span class="orange">Esfíncteres ao longo</span> do TGI.
+					    	 </li>
+					</ul>
+				</div>
+				<div class="box-licao">
+					<h3>ETAPA BÔNUS!</h3>
+					<p class="text-center"><strong style="color:#b4413a; font-size: 15px; margin-bottom: 0px">Cada órgão</strong> movido vale <strong style="color:#b4413a; font-size: 15px; margin-bottom: 0px">10 pontos!</strong></p>
+				</div>
+			</div>
+			<div class="col-dois">
+				<div class="box-licao box-blue">
+					<h3>MONTE O SISTEMA DIGESTÓRIO</h3>
+				</div>
+				<div class="box-licao pull-left" style="width: 135px; height: 302px; padding: 50px 0px">
+					<img src="assets/images/licao-um/1.png" id="drag1" class="img-licao-um" alt="" style="display: block; margin: auto;" draggable="true" ondragstart="drag(event)" >
+
+					<img src="assets/images/licao-um/2.png"  id="drag2" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+					<img src="assets/images/licao-um/3.png" id="drag3" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+					<img src="assets/images/licao-um/4.png" id="drag4" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+					<img src="assets/images/licao-um/5.png" id="drag5" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+					<img src="assets/images/licao-um/6.png" id="drag6" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+					<img src="assets/images/licao-um/7.png" id="drag7" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+					<img src="assets/images/licao-um/7.png" id="drag7" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+					<img src="assets/images/licao-um/8.png" id="drag8" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+					<img src="assets/images/licao-um/9.png" id="drag9" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+					<img src="assets/images/licao-um/10.png" id="drag10" class="img-licao-um" alt="" draggable="true" ondragstart="drag(event)" >
+				</div>
+			</div>
+			<div class="col-tres">
+				<div class="box-licao licao-intro" style="position: relative;">
+					<img src="assets/images/torso.png">
+					<div id="div1" ondrop="drop(event,1,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block1" class="block-divs"></div>
+					<div id="div2" ondrop="drop(event,2,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block2" class="block-divs"></div>
+					<div id="div3" ondrop="drop(event,3,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block3" class="block-divs"></div>
+					<div id="div4" ondrop="drop(event,4,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block4" class="block-divs"></div>
+					<div id="div5" ondrop="drop(event,5,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block5" class="block-divs"></div>
+					<div id="div6" ondrop="drop(event,6,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block6" class="block-divs"></div>
+					<div id="div7" ondrop="drop(event,7,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block7" class="block-divs"></div>
+					<div id="div8" ondrop="drop(event,8,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block8" class="block-divs"></div>
+					<div id="div9" ondrop="drop(event,9,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block9" class="block-divs"></div>
+					<div id="div10" ondrop="drop(event,10,'intro')" ondragover="allowDrop(event)"></div>
+					<div id="block10" class="block-divs"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<img src="assets/images/FADERGS.png" class="pull-left" alt="Logo FADERGS">
+			<p> &copy; 2017 Laureate Brazil. All rights reserved. Private and Confidential</p>
+			<img src="assets/images/laureate.png" class="pull-right" alt="Logo Leaureate">
+		</footer>
+	</main>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>

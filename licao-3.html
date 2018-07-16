@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=description content="Geme">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<title>Game - Lição 3</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/lib/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<main class="licao-tres-game">
+		<div class="box-btn pull-left">Estruturas</div>
+		<img src="assets/images/title-dois.png" class="title-dois pull-left" alt="Sistema Digestorio" style="margin-top: 0px;">	
+		<div class="box-btn pull-left box-btn-2">Pontuação = <span id="point"> 0 </span></div>
+		<div class="content licao">
+			<div id="box-success">
+				<div class='content'>
+					<span class="close" data-step="4">X</span>
+					<h4 id="successTitle" class="text-center">Bom trabalho!</h4>
+					<h4 id="successText" class=text-center"">
+						Você concluiu as tarefas da Lição 3. Clique no X para encerrar o game!"
+					</h4>
+				</div>
+			</div>
+			<div class="col-um">
+				<div class="box-licao" style="height: 75px;">
+					<h3>
+						<small>LIÇÃO 3</small>
+						VISÃO GERAL  
+					</h3>
+				</div>
+				<div class="box-licao">
+					<h4>Instruções</h4>
+					<p>
+						Agora que você montou seu Sistema Digestório inicie as <strong>tarefas</strong> da <strong>Lição 1</strong>. Preste atenção no <strong>objetivo</strong> de cada uma delas. <strong>Bom trabalho!</strong>
+					</p>
+				</div>
+				<div class="box-licao">
+					<h4 class="purple">TAREFAS</h4>
+					<ul>
+					    <li>
+					    	<span class="pink">1)</span> identifique os <span class="pink">órgãos constituintes</span> do TGI. 
+					    </li>
+					    <li>
+					    	<span class="blue">2)</span>
+					    	 identifique os <span class="blue">Órgãos Acessórios</span> ao TGI.
+					    </li>
+					    <li>
+					    	<span class="orange">3)</span>
+					    	 identifique os <span class="orange">Esfíncteres ao longo</span> do TGI.
+					    	 </li>
+					</ul>
+				</div>
+				<div class="box-licao">					
+					<p class="text-center licao-um-game__p" ><strong>Cada acerto</strong> vale <strong class="licao-um-game__p__strong">10 pontos!</strong>
+					</p>
+					<p class="text-center licao-um-game__p2"><strong>Se errar</strong> você <strong class="licao-um-game__p2__strong">perde 5 pontos!</strong>
+					</p>
+				</div>
+			</div>
+			<div class="col-dois">
+				<div class="box-licao box-blue">
+					<h3>TAREFA 3 <br>
+						<small style="color: #fff; font-size: 12px;">Esfíncteres</small>
+					</h3>
+				</div>
+				<div class="box-licao box-drag" style="position: relative;">
+					<span draggable="true" ondragstart="drag(event)" id="drag1" title="Esfíncter esofágico superior">
+						Esfíncter esofágico superior
+					</span>
+					<span draggable="true" ondragstart="drag(event)" id="drag2" title="Esfíncter esofágico inferior">
+						Esfíncter esofágico inferior
+					</span>
+					<span draggable="true" ondragstart="drag(event)" id="drag3" title="Piloro">
+						Piloro
+					</span>
+					<span draggable="true" ondragstart="drag(event)" id="drag4" title="Valva íleocecal">
+						Valva íleocecal
+					</span>
+					<span draggable="true" ondragstart="drag(event)" id="drag5" title="Esfíncter anal interno e externo">
+						Esfíncter anal interno e externo
+					</span>
+				</div>
+				<div class="box-licao box-blue" id="reset">
+					<h3>REINICIAR <br>O JOGO</h3>
+				</div>
+			</div>
+			<div class="col-tres">
+				<div class="box-licao" style="position: relative;">
+					<img src="assets/images/licao-tres/torso.png" style="max-width: 54%">
+					<div id="div1" ondrop="drop(event,1,'um')" ondragover="allowDrop(event)"></div>			
+					<div id="div2" ondrop="drop(event,2,'um')" ondragover="allowDrop(event)"></div>			
+					<div id="div3" ondrop="drop(event,3,'um')" ondragover="allowDrop(event)"></div>
+					<div id="div4" ondrop="drop(event,4,'um')" ondragover="allowDrop(event)"></div>
+					<div id="div5" ondrop="drop(event,5,'um')" ondragover="allowDrop(event)"></div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<img src="assets/images/FADERGS.png" class="pull-left" alt="Logo FADERGS">
+			<p> &copy; 2017 Laureate Brazil. All rights reserved. Private and Confidential</p>
+			<img src="assets/images/laureate.png" class="pull-right" alt="Logo Leaureate">
+		</footer>
+	</main>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>	
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
